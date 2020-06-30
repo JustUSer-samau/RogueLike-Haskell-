@@ -106,6 +106,7 @@ type Res = Modify Val :+ [Key]
 v :: Modify Val :+ [Key]
 v = modify ((+1) :: Int -> Int)  +> []
 
-
+{-
 res :: TDU SMap Identity ((),Res)
 res = runState'' select' v
+-}
